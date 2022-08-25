@@ -15,8 +15,11 @@
                 TextColor="White"
                 BackgroundColor="Red"
                 Command="{Binding DeleteCommand}"/>
-        
+
         <Button Text="Go Back"
                 Command="{Binding GoBackCommand}"/>
+        
+        <Button Text="Get Count"
+                Command="{Binding GetCountCommand}"/>
     </StackLayout>
 </ContentPage>

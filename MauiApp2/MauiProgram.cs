@@ -1,4 +1,6 @@
 ﻿using MauiApp2.ViewModel;
+using MediatR;
+using System.Reflection;
 
 namespace MauiApp2;
 
@@ -16,6 +18,8 @@ public static class MauiProgram
 			});
 
 		builder.Services.AddSingleton<IConnectivity>(Connectivity.Current);
+
+		builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 
 		builder.Services.AddSingleton<MainPage>();
 		builder.Services.AddSingleton<MainViewModel>();
